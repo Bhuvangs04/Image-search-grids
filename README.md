@@ -1,3 +1,8 @@
+## 🚀 Deployment
+
+[![Vercel](https://vercelbadge.vercel.app/api/Bhuvangs04/Image-search-grids)](https://searchimagescom.vercel.app/)
+
+
 # 🖼️ Image Search App
 
 A responsive image search application built using **React**, **TypeScript**, and the **Pixabay API**. It features infinite scrolling, loading indicators, smooth animations, and a responsive masonry layout.
