@@ -27,7 +27,7 @@ export function useImageSearch() {
   const [currentPage, setCurrentPage] = useState(1);
   const [error, setError] = useState<string | null>(null);
 
-  const PIXABAY_API_KEY = '50069722-862c1c4bfbecd4b51bd1bd283';
+const VITE_PIXABAY_API_KEY= import.meta.env.VITE_PIXABAY_API_KEY;
   const ITEMS_PER_PAGE = 20;
 
   // Reset search state when beginning a new search
@@ -48,7 +48,7 @@ export function useImageSearch() {
 
     try {
       const response = await axios.get<SearchResponse>(
-        `https://pixabay.com/api/?key=${PIXABAY_API_KEY}&q=${encodeURIComponent(query)}&page=${page}&per_page=${ITEMS_PER_PAGE}&image_type=photo&safesearch=true`
+        `https://pixabay.com/api/?key=${VITE_PIXABAY_API_KEY}&q=${encodeURIComponent(query)}&page=${page}&per_page=${ITEMS_PER_PAGE}&image_type=photo&safesearch=true`
       );
 
       const newImages = response.data.hits;
