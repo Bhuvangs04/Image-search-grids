@@ -29,7 +29,7 @@ A responsive image search application built using **React**, **TypeScript**, and
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/image-search-app.git
+   git clone https://github.com/Bhuvangs04/Image-search-grids.git
    cd image-search-app
 
 2. **Install Dependencies**
